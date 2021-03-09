@@ -7,6 +7,5 @@ function argumentType(value) {
     return("string");
   } 
     return(undefined);
-  
 }
 module.exports = argumentType;
