@@ -1,14 +1,14 @@
 function prime(num) {
   if (num <= 1 || num >= 1000) {
-    return "data is not correct";
+    return "Данные неверны";
   } else if (num === 2) {
-    return num + " - prime number";
+    return `Число ${num} - простое число`;
   }
   for (let i = 2; i < num; i++) {
     if (num % i === 0) {
-      return num + " - composite number";
+      return `Число ${num} - составное число`;
     }
-    return num + " - prime number";
+    return `Число ${num} - простое число`;
   }
   return true;
 }

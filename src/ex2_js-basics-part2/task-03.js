@@ -5,4 +5,5 @@ function parityValues(values) {
   let zeroNum = numbers.filter((item) => item === 0);
   return [evenNum.length, oddNum.length, zeroNum.length];
 }
+
 module.exports = parityValues;

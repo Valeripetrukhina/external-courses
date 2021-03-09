@@ -1,7 +1,4 @@
-function sumPositive(positiveNum) {
-  let positive = positiveNum.filter((item) => item > 0);
-  return positive.reduce(
-    (previousValue, currentValue) => previousValue + currentValue
-  );
+function getMaxOfArray(numArray) {
+  return Math.max.apply(null, numArray);
 }
-module.exports = sumPositive;
+module.exports = getMaxOfArray;
