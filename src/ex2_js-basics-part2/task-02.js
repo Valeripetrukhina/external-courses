@@ -3,7 +3,8 @@ function elementArr(arr) {
     let element = arr.forEach(function (item) {
       console.log(item);
     });
-  } console.log(arr.length);
+    console.log(arr.length);
+  } 
   return;
 }
 module.exports = elementArr;

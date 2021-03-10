@@ -1,11 +1,11 @@
 function argumentType(value) {
   if (Number.isNaN(value)) {
-    return("undefined");
-  } else if (typeof value === 'number') {
-    return("number");
-  } else if (typeof value === 'string') {
-    return("string");
+    return "undefined";
+  } if (typeof value === 'number') {
+    return "number";
+  } if (typeof value === 'string') {
+    return "string";
   } 
-    return(undefined);
+    return undefined;
 }
 module.exports = argumentType;
