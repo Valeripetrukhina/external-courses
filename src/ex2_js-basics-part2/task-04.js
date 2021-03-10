@@ -1,9 +1,6 @@
-function comparisonInArr(data) {
-  return data.reduce(function (previousValue, currentValue, index, array) {
-    if (index === 0) {
-      return true;
-    }
-    return previousValue && currentValue == array[index - 1];
-  });
+function comparisonInArr(datas){
+  return datas.every(function(data) {
+     return (data === datas[0])
+})
 }
 module.exports = comparisonInArr;
