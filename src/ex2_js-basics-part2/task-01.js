@@ -1,10 +1,10 @@
 function argumentType(value) {
   if (Number.isNaN(value)) {
-    return "undefined";
+    return 'undefined';
   } if (typeof value === 'number') {
-    return "number";
+    return 'number';
   } if (typeof value === 'string') {
-    return "string";
+    return 'string';
   } 
     return undefined;
 }
