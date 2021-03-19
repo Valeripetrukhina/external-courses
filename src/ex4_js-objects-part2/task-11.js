@@ -9,4 +9,5 @@ function countSymbols(str) {
     console.log(`Символ: ${key}, повторения ${result[key]}`);
   }
 }
+
 module.exports = countSymbols

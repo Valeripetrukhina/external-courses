@@ -4,4 +4,5 @@ function lineInLine(str, str1, num) {
   let string = strToArr.join(' ');
   return string;
 }
+
 module.exports = lineInLine

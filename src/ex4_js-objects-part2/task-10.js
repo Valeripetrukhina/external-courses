@@ -4,4 +4,5 @@ function invertedLine(str) {
   let arrStr = invertArray.join('');
   return arrStr;
 }
+
 module.exports = invertedLine;

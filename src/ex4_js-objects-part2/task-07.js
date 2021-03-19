@@ -4,4 +4,5 @@ function lineLength (str, num){
     }
     return str;
 }
+
 module.exports = lineLength

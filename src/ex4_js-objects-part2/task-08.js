@@ -4,4 +4,5 @@ function lowerCamelCase (str){
     str3 = str2.replace(/^\S/g, function(b) {return b.toLowerCase()});
     return str3.replace(/\s+/g, '');
 }
+
 module.exports = lowerCamelCase
