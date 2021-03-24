@@ -1,7 +1,6 @@
-function searchString (str, str1) {
-    if (!str.includes(str1)) {
-        return false;
-    } 
-    return true;
-}
+function searchString(str, str1) {
+    
+    return str.includes(str1)
+};
+
 module.exports = searchString 

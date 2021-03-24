@@ -1,4 +1,6 @@
-function randomInteger (){
-    return Math.floor(Math.random() * 101) + 0;
-}
+function randomInteger() {
+    
+    return Math.floor(Math.random() * 101)
+};
+
 module.exports = randomInteger

@@ -1,5 +1,6 @@
-function emptyObj(){
-    let obj = Object.create(null);
-    return obj
-  }
+function emptyObj() {
+    
+  return Object.create(null)
+  };
+
   module.exports = emptyObj

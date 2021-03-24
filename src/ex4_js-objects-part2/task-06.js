@@ -1,4 +1,12 @@
-function capitalLetters (str){
-    return str.replace(/(^|\s)\S/g, function(a) {return a.toUpperCase()})
-}
+function capitalLetters(str) {
+    
+    return str
+        .toLowerCase()
+        .split(' ')
+        .map(function(item) {
+            return item[0].toUpperCase() + item.substring(1);
+        })
+        .join(' ')
+};
+
 module.exports = capitalLetters 
