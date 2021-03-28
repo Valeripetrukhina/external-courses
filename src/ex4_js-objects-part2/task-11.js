@@ -1,13 +1,11 @@
 function countSymbols(str) {
-  let symbols = str.split('');
-  let result = symbols.reduce(function (count, key) {
-    if (!count[key]) {
-      count[key] = 1;
-    } else {
-      count[key] = count[key] + 1;
-    }
-    return count;
-  }, {});
+  const symbols = str.split("");
+  const result = {};
+  symbols.forEach(function (key, index) {
+    let count = result[symbols[index]] ? result[symbols[index]] : 0;
+    result[symbols[index]] = count + 1;
+  });
+
   for (let sym in result) {
     console.log(`Символ: ${sym}, повторения ${result[sym]}`);
   }
