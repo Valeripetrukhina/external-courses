@@ -1,6 +1,5 @@
 function invertedLine(str) {
-    
-  return str.split('').reverse().join('')
-  };
-  
-  module.exports = invertedLine
+  return str.split('').reverse().join('');
+}
+
+module.exports = invertedLine;

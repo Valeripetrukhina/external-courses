@@ -1,12 +1,16 @@
 function countSymbols(str) {
-    let result = {};
-    let symbols = str.split("");
-    for (let i = 0; i < symbols.length; i++) {
-      let count = result[symbols[i]] ? result[symbols[i]] : 0;
-      result[symbols[i]] = count + 1;
+  let symbols = str.split('');
+  let result = symbols.reduce(function (count, key) {
+    if (!count[key]) {
+      count[key] = 1;
+    } else {
+      count[key] = count[key] + 1;
     }
-    for (let key in result) {
-      console.log(`Символ: ${key}, повторения ${result[key]}`);
-    }
+    return count;
+  }, {});
+  for (let sym in result) {
+    console.log(`Символ: ${sym}, повторения ${result[sym]}`);
   }
-  module.exports = countSymbols 
+}
+
+module.exports = countSymbols;

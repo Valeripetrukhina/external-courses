@@ -1,8 +1,8 @@
 function lineInLine(str, str1, num) {
-    let strToArr = str.split(' ');
-    let arr = strToArr.splice(num + 1, 0, str1);
-    let string = strToArr.join(' ');
-    return string
-  };
+  let strToArr = str.split(' ');
+  let arr = strToArr.splice(num + 1, 0, str1);
+  let string = strToArr.join(' ');
+  return string;
+}
 
-  module.exports = lineInLine 
+module.exports = lineInLine;

@@ -1,6 +1,5 @@
 function lowerCamelCase(str) {
-  
-    return str
+  return str
     .toLowerCase()
     .split(' ')
     .map(function (item, index) {
