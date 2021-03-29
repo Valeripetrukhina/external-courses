@@ -25,7 +25,7 @@ function Calculator() {
     } else if (this.result !== 0) {
       this.result = this.result / num;
     } else {
-      this.result = (this.result + 0) / num;
+      this.result = this.result + num;
     }
 
     return this.divide;
@@ -36,7 +36,7 @@ function Calculator() {
     } else if (this.result !== 0) {
       this.result = this.result * num;
     } else {
-      this.result = (this.result + 1) * num;
+      this.result = this.result + num;
     }
 
     return this.multiply;
