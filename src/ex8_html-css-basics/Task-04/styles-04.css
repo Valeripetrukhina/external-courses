@@ -1,0 +1,42 @@
+.heading {
+  margin: 5px;
+  background-color: #afeeee;
+}
+.list {
+  margin: 5px;
+  background-color: Aquamarine;
+}
+.wrapper {
+  background-color: Turquoise;
+  margin: 5px;
+}
+
+.img {
+  margin: 5px;
+}
+
+.link {
+  margin: 5px;
+  background-color: #6495ed;
+}
+
+p {
+  margin: 5px;
+}
+p2 {
+  margin-left: 20px;
+}
+p1 {
+  margin-left: 40px;
+  font-size: 3em;
+}
+pre {
+  margin: 5px;
+  font-size: 0.3in;
+}
+
+.text {
+  word-spacing: 15px;
+  letter-spacing: 5px;
+  font-family: Courier New;
+}
