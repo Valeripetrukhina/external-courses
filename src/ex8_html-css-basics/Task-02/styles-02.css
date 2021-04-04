@@ -1,37 +1,37 @@
 .heading {
-    margin: 5px;
-  }
-  .list {
-    margin: 5px
-  }
-  .wrapper {
-      background-color: green;
-    margin: 5px;
-    }
-    
-  .img {
-    margin: 5px;
-  }
-  
-  .link {
-    margin: 5px;
-  }
-  
-  .paragraph {
-    margin: 5px;
-    width: 50%;
-  }
-  p {
-    margin: 10px;
-  }
-  
-  p2 {
-    margin-left: 20px;
-  }
-  
-  p1 {
-    margin-left: 40px;
-  }
-  pre {
-    font-family: Times;
-  }
+  margin: 5px;
+}
+.list {
+  margin: 5px;
+}
+.wrapper {
+  background-color: green;
+  margin: 5px;
+}
+
+.img {
+  margin: 5px;
+}
+
+.link {
+  margin: 5px;
+}
+
+.paragraph {
+  margin: 5px;
+  width: 50%;
+}
+p {
+  margin: 10px;
+}
+
+p2 {
+  margin-left: 20px;
+}
+
+p1 {
+  margin-left: 40px;
+}
+pre {
+  font-family: Times;
+}
