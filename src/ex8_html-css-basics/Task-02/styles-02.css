@@ -1,9 +1,11 @@
 .heading {
   margin: 5px;
 }
+
 .list {
   margin: 5px;
 }
+
 .wrapper {
   background-color: green;
   margin: 5px;
@@ -21,6 +23,7 @@
   margin: 5px;
   width: 50%;
 }
+
 p {
   margin: 10px;
 }
@@ -32,6 +35,7 @@ p2 {
 p1 {
   margin-left: 40px;
 }
+
 pre {
   font-family: Times;
 }

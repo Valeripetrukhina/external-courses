@@ -17,12 +17,14 @@
 .link {
   margin: 20px;
 }
+
 .table table {
   border: 1px solid grey;
   table-layout: fixed;
   border-collapse: collapse;
   width: 50%;
 }
+
 .table {
   margin: 10px;
 }
@@ -31,6 +33,7 @@ th {
   padding: 10px;
   border: 1px solid grey;
 }
+
 td {
   padding: 20px;
   border: 1px solid grey;

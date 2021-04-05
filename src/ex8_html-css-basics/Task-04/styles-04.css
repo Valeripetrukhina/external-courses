@@ -2,10 +2,12 @@
   margin: 5px;
   background-color: #afeeee;
 }
+
 .list {
   margin: 5px;
   background-color: Aquamarine;
 }
+
 .wrapper {
   background-color: Turquoise;
   margin: 5px;
@@ -23,13 +25,16 @@
 p {
   margin: 5px;
 }
+
 p2 {
   margin-left: 20px;
 }
+
 p1 {
   margin-left: 40px;
   font-size: 3em;
 }
+
 pre {
   margin: 5px;
   font-size: 0.3in;
