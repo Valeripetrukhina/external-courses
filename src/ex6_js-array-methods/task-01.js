@@ -1,21 +1,41 @@
-let analogSlice = function (arr, begin = 0, end = arr.length) {
-  let result = [];
-  let positiveBegin = begin < 0 ? arr.length + begin : begin;
-  let positiveEnd = end < 0 ? arr.length + end : end;
+const getBeginIndex = (begin, size) => {
+  if (begin < 0) {
+    if (size + begin < 0) {
+      return 0;
+    }
 
-  if (Math.abs(begin) >= arr.length) {
-    positiveBegin = 0;
+    return size + begin;
   }
 
-  if (Math.abs(end) >= arr.length) {
-    positiveEnd = arr.length;
+  return begin;
+};
+
+const getEndIndex = (end, begin, size) => {
+  if (end > 0) {
+    if (end > size) {
+      return size;
+    }
+
+    return end;
   }
 
-  for (i = positiveBegin; i < positiveEnd; i++) {
-    result.push(arr[i]);
+  if (end > begin) {
+    return size + end;
   }
 
-  return result;
+  return end;
+};
+
+const analogSlice = (arr, begin = 0, end = arr.length) => {
+  const resultArray = [];
+  let validBegin = getBeginIndex(begin, arr.length);
+  let validEnd = getEndIndex(end, begin, arr.length);
+
+  for (let i = validBegin; i < validEnd; i++) {
+    resultArray.push(arr[i]);
+  }
+
+  return resultArray;
 };
 
 module.exports = analogSlice;
