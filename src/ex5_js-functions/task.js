@@ -1,59 +1,42 @@
-function Calculator() {
-  this.result = 0;
+const calculator = () => {
+  let result = 0;
 
-  this.add = (num) => {
-    if (!num) {
-      this.result = this.result + 0;
-    } else {
-      this.result = this.result + num;
-    }
+  return ({
+  add: function add(num = 0) {
+    result = result + num;
 
-    return this.add;
-  };
-  this.subtract = (num) => {
-    if (!num) {
-      this.result = this.result + 0;
-    } else {
-      this.result = this.result - num;
-    }
+    return add;
+  },
 
-    return this.subtract;
-  };
-  this.divide = (num) => {
-    if (!num) {
-      this.result = this.result + 0;
-    } else if (this.result !== 0) {
-      this.result = this.result / num;
-    } else {
-      this.result = this.result + num;
-    }
+  subtract: function subtract(num = 0) {
+    result = result - num;
 
-    return this.divide;
-  };
-  this.multiply = (num) => {
-    if (!num) {
-      this.result = this.result + 0;
-    } else if (this.result !== 0) {
-      this.result = this.result * num;
-    } else {
-      this.result = this.result + num;
-    }
+    return subtract;
+  },
 
-    return this.multiply;
-  };
-  this.getResult = (num) => {
-    if (!num) {
-      this.result = this.result;
-    }
-    return this.result;
-  };
-  this.reset = (num) => {
-    this.result = this.result * 0;
+  divide: function divide(num = 1) {
+    result = result / num;
 
-    return this.reset;
-  };
-}
+    return divide;
+  },
 
-let calculator = new Calculator();
+  multiply: function multiply(num = 1) {
+    result = result * num;
 
-module.exports = calculator;
+    return multiply;
+  },
+
+  getResult: function getResult() {
+   
+    return result;
+  },
+
+  reset: function reset() {
+    result = result * 0;
+
+    return reset;
+  },
+});
+};
+
+module.exports = calculator();
