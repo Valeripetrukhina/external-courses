@@ -11,7 +11,7 @@ td {
 }
 
 th {
-    padding: 6px 11px;
+  padding: 6px 11px;
 }
 
 td {
@@ -19,14 +19,14 @@ td {
 }
 
 .string {
-    background-color:  #d4e2f5;
+  background-color: #d4e2f5;
 }
 
 .string1 {
-    background-color: #ededfa;
+  background-color: #ededfa;
 }
 
 tbody tr:hover {
-background: #b0c5ec;
-color: #2d5283;
+  background: #b0c5ec;
+  color: #2d5283;
 }
