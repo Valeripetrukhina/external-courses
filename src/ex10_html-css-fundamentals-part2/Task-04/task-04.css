@@ -64,10 +64,10 @@ text {
   border: none;
   background: none;
   width: 68px;
-  color: #6D6E71;
+  color: #6d6e71;
 }
 .info-element {
-  fill: #6D6E71;
+  fill: #6d6e71;
 }
 
 .location {
@@ -75,20 +75,20 @@ text {
   border-left: 2px solid #eceef4;
 }
 
-.location:before, .location:after{
-  
+.location:before,
+.location:after {
   position: absolute;
   opacity: 0;
   visibility: hidden;
 }
 
-.location:before{
+.location:before {
   content: attr(data-tooltip);
   width: 228px;
   height: 62px;
   line-height: 40px;
   background: #fcfcfc;
-  border: 2px solid #D4D4D5;
+  border: 2px solid #d4d4d5;
   bottom: 90px;
   top: calc(10% - 70px);
   left: calc(74% - 55px);
@@ -99,12 +99,13 @@ text {
   width: 0;
   height: 0;
   border: 15px solid transparent;
-  border-top-color:  #D4D4D5;
+  border-top-color: #d4d4d5;
   bottom: 70px;
   top: calc(10% - 6px);
   left: calc(81% - 55px);
 }
-.location:hover:before, .location:hover:after {
+.location:hover:before,
+.location:hover:after {
   opacity: 1;
   visibility: visible;
 }
@@ -205,9 +206,8 @@ li {
 }
 
 .button a:hover + .active {
-opacity: 1;
+  opacity: 1;
 }
-
 
 #searchform {
   display: flex;
@@ -357,7 +357,7 @@ h4 {
   .nav-toggle {
     display: flex;
   }
-  
+
   header {
     height: 0;
     visibility: hidden;
@@ -385,7 +385,7 @@ h4 {
   #searchform input {
     height: 70px;
   }
-  
+
   #searchform button {
     height: 70px;
   }
