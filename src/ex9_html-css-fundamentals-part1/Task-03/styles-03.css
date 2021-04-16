@@ -1,0 +1,100 @@
+.box-wrapper {
+  margin: 20% 30%;
+  padding: 1px;
+  width: 224.5px;
+  background-color: White;
+  border-radius: 15px 15px;
+  border: 2px solid DimGrey;
+  box-shadow: 0 3px 1px LightGray;
+}
+
+.box-container {
+  padding: 4.5px;
+  background-color: #d3d3d3;
+  border-radius: 10px 10px;
+}
+
+.button {
+  display: inline-block;
+  padding: 8px 42px 8px 42px;
+  background: linear-gradient(to top, #a9a9a9 30%, #dcdcdc 70%);
+  border: 2px solid #a9a9a9;
+  border-radius: 8px 8px;
+  box-shadow: 0 2.5px 1.5px dimgrey;
+  text-decoration: none;
+}
+
+span {
+  text-align: center;
+  font-family: Noto Sans, sans-serif;
+  font-size: 20px;
+  color: black;
+  font-weight: 800;
+  text-shadow: 0px 1px 1px white;
+  opacity: 0.6;
+}
+
+.star-left {
+  margin: 11px -30px;
+  height: 0;
+  width: 0;
+  position: absolute;
+  border-right: 12px solid transparent;
+  border-bottom: 7px solid #808080;
+  border-left: 12px solid transparent;
+  transform: rotate(30deg);
+  box-shadow: 0 0.5px 0px white;
+}
+
+.star:before,
+.star:after {
+  content: "";
+  height: 0;
+  width: 0;
+  position: absolute;
+}
+
+.star-left:before {
+  top: -6px;
+  left: -6.5px;
+  border-bottom: 9px solid #808080;
+  border-left: 4.5px solid transparent;
+  border-right: 2px solid transparent;
+  transform: rotate(-35deg);
+}
+.star-left:after {
+  top: 0px;
+  left: -12px;
+  border-right: 12px solid transparent;
+  border-bottom: 7px solid #808080;
+  border-left: 12px solid transparent;
+  transform: rotate(-60deg);
+}
+.star-right {
+  margin: -17px 132px;
+  height: 0;
+  width: 0;
+  position: absolute;
+  border-right: 12px solid transparent;
+  border-bottom: 7px solid #808080;
+  border-left: 12px solid transparent;
+  transform: rotate(30deg);
+  box-shadow: 0 0.5px 0px white;
+}
+
+.star-right:before {
+  top: -6px;
+  left: -6.5px;
+  border-bottom: 9px solid #808080;
+  border-left: 4.5px solid transparent;
+  border-right: 2px solid transparent;
+  transform: rotate(-35deg);
+}
+.star-right:after {
+  top: 0px;
+  left: -12px;
+  border-right: 12px solid transparent;
+  border-bottom: 7px solid #808080;
+  border-left: 12px solid transparent;
+  transform: rotate(-60deg);
+}
