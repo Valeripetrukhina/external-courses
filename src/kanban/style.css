@@ -5,7 +5,7 @@ body {
   padding: 0;
 }
 
-header {
+.header {
   height: 55px;
   width: 100%;
   display: flex;
@@ -53,13 +53,7 @@ header {
   justify-content: space-around;
   align-items: center;
   border-radius: 4px;
-}
-
-.plus {
-  width: 25px;
-  height: 25px;
-  border-radius: 52px;
-  background: url(images/add.svg) no-repeat;
+  border: none;
   cursor: pointer;
 }
 
@@ -69,39 +63,23 @@ header {
 }
 
 .user_menu {
-  width: 52px;
+  width: 57px;
   height: 38.4px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-}
-
-.img {
-  width: 35px;
-  height: 35px;
-  border-radius: 40px;
-  background: white url(images/user.svg) no-repeat;
-  border: 1px solid black;
-}
-
-.button_user_menu {
-  width: 12px;
-  height: 11px;
   border: none;
-  background: url(images/Vector.svg) no-repeat;
-}
-
-.user_menu, .button_user_menu {
+  background: none;
   cursor: pointer;
+  margin: 2px;
 }
 
-article {
+.article {
   height: calc(100vh - 110px);
   width: 100%;
   background: #2488c2;
 }
 
-footer {
+.footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
