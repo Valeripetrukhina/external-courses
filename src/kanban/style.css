@@ -5,7 +5,7 @@ body {
   padding: 0;
 }
 
-nav {
+header {
   height: 55px;
   width: 100%;
   display: flex;
@@ -21,7 +21,7 @@ nav {
   align-items: center;
 }
 
-.nav_element {
+.header_element {
   width: 294px;
   display: flex;
   justify-content: space-between;
@@ -89,10 +89,13 @@ nav {
   height: 11px;
   border: none;
   background: url(images/Vector.svg) no-repeat;
+}
+
+.user_menu, .button_user_menu {
   cursor: pointer;
 }
 
-header {
+article {
   height: calc(100vh - 110px);
   width: 100%;
   background: #2488c2;
