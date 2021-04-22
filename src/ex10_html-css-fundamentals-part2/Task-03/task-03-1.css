@@ -18,11 +18,12 @@ td {
   padding: 10px 15px;
 }
 
-.string {
+#head,
+tr:nth-child(even) {
   background-color: #d4e2f5;
 }
 
-.string1 {
+tr:nth-child(odd) {
   background-color: #ededfa;
 }
 
