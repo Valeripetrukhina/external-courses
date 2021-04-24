@@ -1,0 +1,11 @@
+.table {
+  font-family: calibri;
+}
+
+td#name {
+  text-transform: capitalize;
+}
+
+tr#head {
+  font-size: small;
+}

@@ -1,0 +1,33 @@
+.table {
+  border-collapse: separate;
+  border-spacing: 1px;
+  color: #4472ad;
+}
+
+table,
+th,
+td {
+  border: 0.5px solid white;
+}
+
+th {
+  padding: 6px 11px;
+}
+
+td {
+  padding: 10px 15px;
+}
+
+#head,
+tr:nth-child(even) {
+  background-color: #d4e2f5;
+}
+
+tr:nth-child(odd) {
+  background-color: #ededfa;
+}
+
+tbody tr:hover {
+  background: #b0c5ec;
+  color: #2d5283;
+}
