@@ -1,0 +1,108 @@
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  height: 55px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #0067a3;
+}
+
+.app_logo {
+  width: 400px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header_element {
+  width: 294px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 5px;
+}
+
+.menu {
+  width: 35px;
+  height: 30px;
+  background: url(images/menu.svg) no-repeat;
+  border: none;
+  cursor: pointer;
+}
+
+.name {
+  width: 331px;
+  height: 26px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  font-size: 28px;
+}
+
+.create_list {
+  width: 181px;
+  height: 33px;
+  background: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+
+.list {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+}
+
+.user_menu {
+  width: 57px;
+  height: 38.4px;
+  display: flex;
+  align-items: center;
+  border: none;
+  background: none;
+  cursor: pointer;
+  margin: 2px;
+}
+
+.article {
+  height: calc(100vh - 110px);
+  width: 100%;
+  background: #2488c2;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #0067a3;
+  height: 55px;
+  width: 100%;
+}
+
+.tasks_info {
+  width: 400px;
+}
+
+.tasks_info_item {
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  margin-left: 36px;
+}
+
+.text_board {
+  width: 279px;
+  height: 21px;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
