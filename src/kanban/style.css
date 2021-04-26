@@ -88,15 +88,18 @@ body {
   width: 100%;
 }
 
-.text {
+.tasks_info {
   width: 333px;
+}
+
+.tasks_info_item {
   font-size: 18px;
   font-family: Arial, Helvetica, sans-serif;
   color: white;
-  margin-left: 67px;
+  margin-left: 36px;
 }
 
-.text_board {
+.copyright {
   width: 279px;
   height: 21px;
   font-size: 18px;
@@ -107,13 +110,13 @@ body {
 .dropdown_list {
   position: absolute;
   top: 7%;
-  right: .2%;
-  background-color: #0067A3;
+  right: 0.2%;
+  background-color: #0067a3;
   border-radius: 5px;
   text-align: center;
   min-width: 160px;
   z-index: 1;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
 
 .dropdown_element {
