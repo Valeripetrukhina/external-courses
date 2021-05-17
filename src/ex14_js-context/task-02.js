@@ -63,3 +63,4 @@ function Hangman(word) {
 let hangman = new Hangman();
 
 module.exports = hangman;
+

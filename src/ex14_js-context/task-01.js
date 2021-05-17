@@ -51,6 +51,6 @@ function Calculator() {
   }
 }
 
-let result = new Calculator();
+let calculator = new Calculator();
 
-module.exports = result;
+module.exports = calculator;
