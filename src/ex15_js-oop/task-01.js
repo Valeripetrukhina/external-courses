@@ -1,83 +1,55 @@
-var candy = {
-  weight: 50,
-};
+function Candy(name, weight, chocolate, filling) {
+  this.name = name;
+  this.weight = weight;
+  this.chocolate = chocolate;
+  this.filling = filling;
+}
 
-var chocolateMilk = Object.create(candy);
-
-chocolateMilk = {
-  percentageChocolate: "40%",
+Candy.prototype = {
   chocolate: function () {
-    console.log("Milk chocolate melts quickly");
-  },
-};
-var chocolateDark = Object.create(candy);
-
-chocolateDark = {
-  percentageChocolate: "75%",
-  chocolate: function () {
-    console.log("Dark chocolate does not melt well");
-  },
-};
-var chocolateBitter = Object.create(candy);
-
-chocolateBitter = {
-  percentageChocolate: "80%",
-  chocolate: function () {
-    console.log("Bitter chocolate does not melt well");
+    console.log(this.chocolate + " chocolate with " + this.filling);
   },
 };
 
-var fillingPlum = Object.create(candy);
-
-fillingPlum = {
-  percentageChocolate: "45%",
-  filling: function () {
-    console.log("Inside plum");
-  },
-};
-
-var fillingPrune = Object.create(candy);
-
-fillingPrune = {
-  percentageChocolate: "50%",
-  filling: function () {
-    console.log("Inside prune");
-  },
-};
-
-var fillingApricots = Object.create(candy);
-
-fillingApricots = {
-  percentageChocolate: "55%",
-  filling: function () {
-    console.log("Inside dried apricots");
-  },
-};
+var milka = new Candy("Milka", 40, "milk", "blowberry");
+var alpenGold = new Candy("Alpen Gold", 50, "dark", "prune");
+var chocBitter = new Candy("Premium", 60, "bitter", "plum");
+var chocBar = new Candy("Bar", 45, "milk", "prune");
+var wafer = new Candy("Wafer", 30, "milk", "plum");
 
 var childGift = [];
-childGift.push(
-  chocolateMilk,
-  chocolateDark,
-  chocolateBitter,
-  fillingPlum,
-  fillingPrune,
-  fillingApricots
-);
+childGift.push(milka, alpenGold, chocBitter, chocBar, wafer);
+
+console.log(childGift);
 
 var childGiftWeight1 = function () {
-  console.log(childGift.length * candy.weight);
+  console.log(
+    milka.weight +
+      alpenGold.weight +
+      chocBitter.weight +
+      chocBar.weight +
+      wafer.weight
+  );
 };
+childGiftWeight1();
 
 var sortGift = childGift;
 sortGift.sort(function (a, b) {
-  if (a.percentageChocolate > b.percentageChocolate) return 1;
-  if (a.percentageChocolate < b.percentageChocolate) return -1;
+  if (a.weight > b.weight) return 1;
+  if (a.weight < b.weight) return -1;
   return 0;
 });
 sortGift.forEach(function (sortGift) {
   console.log(sortGift);
 });
 
-var findInGift = function (name) {
-  console.log(childGift.this.name);
-};
+function foundName(name) {
+  this.name = name;
+  console.log(
+    childGift.find(function (element) {
+      if (element.name === this.name) {
+       return element.name;
+      }
+      return element.name
+      }));
+}

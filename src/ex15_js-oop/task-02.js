@@ -1,6 +1,7 @@
 class ElectricalAppliances {
   constructor(name) {
     this.name = name;
+    return this.name;
   }
 
   power(watt) {
@@ -38,7 +39,13 @@ function powerConsumption() {
     washer.power(200) + electricStove.power(150) + vacuumCleaner.power(100);
   console.log(`Power consumption of connected devices = ${consumption} watt.`);
 }
+powerConsumption();
 
 let room = [];
+room.push(washer, electricStove, vacuumCleaner, laptop, telephone);
+console.log(room);
 
-powerConsumption();
+function foundName(name) {
+  this.name = name;
+  console.log(room.find((x) => x.name === this.name));
+}
