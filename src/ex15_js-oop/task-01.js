@@ -17,39 +17,37 @@ var chocBitter = new Candy("Premium", 60, "bitter", "plum");
 var chocBar = new Candy("Bar", 45, "milk", "prune");
 var wafer = new Candy("Wafer", 30, "milk", "plum");
 
-var childGift = [];
-childGift.push(milka, alpenGold, chocBitter, chocBar, wafer);
+function ChildGift(giftArr) {
+  this.gift = giftArr;
 
-console.log(childGift);
+  this.giftWeight = function () {
+    var weight = 0;
+    for (i = 0; i < this.gift.length; i++) {
+      weight += this.gift[i].weight;
+    }
+    console.log(weight);
+  };
 
-var childGiftWeight1 = function () {
-  console.log(
-    milka.weight +
-      alpenGold.weight +
-      chocBitter.weight +
-      chocBar.weight +
-      wafer.weight
-  );
-};
-childGiftWeight1();
-
-var sortGift = childGift;
-sortGift.sort(function (a, b) {
-  if (a.weight > b.weight) return 1;
-  if (a.weight < b.weight) return -1;
-  return 0;
-});
-sortGift.forEach(function (sortGift) {
-  console.log(sortGift);
-});
-
-function foundName(name) {
-  this.name = name;
-  console.log(
-    childGift.find(function (element) {
-      if (element.name === this.name) {
-       return element.name;
-      }
-      return element.name
-      }));
+  this.sortGift = function () {
+    var sortGift = this.gift;
+    sortGift.sort(function (a, b) {
+      if (a.weight > b.weight) return 1;
+      if (a.weight < b.weight) return -1;
+      return 0;
+    });
+    sortGift.forEach(function (sortGift) {
+      console.log(sortGift);
+    });
+  };
+  this.foundName = function (name) {
+    this.name = name;
+    console.log(
+      this.gift.find(function (element) {
+        if (element.name === this.name);
+        return element.name;
+      })
+    );
+  };
 }
+
+var myGift = new ChildGift([milka, alpenGold, chocBitter, chocBar, wafer]);
