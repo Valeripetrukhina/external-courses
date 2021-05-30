@@ -73,10 +73,15 @@ body {
   margin: 2px;
 }
 
-.article {
+.main {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
   height: calc(100vh - 110px);
   width: 100%;
   background: #2488c2;
+  overflow-x: scroll;
+  overflow-y: hidden;
 }
 
 .footer {
@@ -131,4 +136,82 @@ body {
 .dropdown_element:hover {
   background-color: white;
   color: black;
+}
+
+.cards_tasks {
+  width: 282px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #ebecf0;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.task_nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  width: 258px;
+  background-color: #ebecf0;
+}
+
+.task_menu {
+  border: none;
+  cursor: pointer;
+  background-color: #ebecf0;
+}
+
+.board {
+  width: 258px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.card_name {
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  border: none;
+  border-radius: 5px;
+  width: 258px;
+  resize: vertical;
+  margin-bottom: 15px;
+  background-color: white;
+}
+
+.add_card {
+  width: 258px;
+  display: flex;
+  align-items: flex-start;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  border: none;
+  margin-bottom: 8px;
+  cursor: pointer;
+  background-color: #ebecf0;
+}
+
+.dropdown_task {
+  width: 258px;
+  height: auto;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  background-color: white;
+  box-shadow: 0px 0px 6px 6px rgba(0, 0, 0, 0.2);
+}
+
+.selection_task:hover {
+  color: #2488c2;
+  cursor: pointer;
+  background-color: #e7e7e9;
 }

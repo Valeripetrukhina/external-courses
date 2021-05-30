@@ -24,7 +24,56 @@
             </button>
         </div>
     </header>
-    <article class="article"></article>
+    <main class="main">
+        <div class="cards_tasks backlogBoard">
+            <div class="task_nav">
+                <text class="task_title">Backlog</text>
+                <button class="task_menu">
+                    <img src="images/•••.svg">
+                </button>
+            </div>
+            <div class="board backlog"></div>
+            <button class="add_card new_card">
+                <img src="images/plus.svg">Add card
+            </button>
+        </div>
+        <div class="cards_tasks readyBoard">
+            <div class="task_nav">
+                <text class="task_title">Ready</text>
+                <button class="task_menu">
+                    <img src="images/•••.svg">
+                </button>
+            </div>
+            <div class="board ready"></div>
+            <button class="add_card selection btnReady">
+                <img src="images/plus.svg">Add card
+            </button>
+        </div>
+        <div class="cards_tasks progressBoard">
+            <div class="task_nav">
+                <text class="task_title">In Progress</text>
+                <button class="task_menu">
+                    <img src="images/•••.svg">
+                </button>
+            </div>
+            <div class="board progress"></div>
+            <button class="add_card selection btnProgress">
+                <img src="images/plus.svg">Add card
+            </button>
+        </div>
+        <div class="cards_tasks finishedBoard">
+            <div class="task_nav">
+                <text class="task_title">Finished</text>
+                <button class="task_menu">
+                    <img src="images/•••.svg">
+                </button>
+            </div>
+            <div class="board finished"></div>
+            <button class="add_card selection btnFinished">
+                <img src="images/plus.svg">Add card
+            </button>
+        </div>
+    </main>
     <footer class="footer">
         <div class="tasks-info">
             <span class="tasks_info_item">Active tasks: N</span>
@@ -33,5 +82,6 @@
         <text class="copyright">Kanban board by NAME, YEAR</text>
     </footer>
     <script src="dropdown.js"></script>
+    <script src="tasks-block.js"></script>
 </body>
 </html>
