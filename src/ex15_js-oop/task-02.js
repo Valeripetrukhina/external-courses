@@ -1,51 +1,51 @@
 class ElectricalAppliances {
-  constructor(name) {
+  constructor(name, watt, connect) {
     this.name = name;
-    return this.name;
-  }
-
-  power(watt) {
     this.watt = watt;
-    return this.watt;
+    this.connect = connect;
+  }
+  attention() {
+    console.log(`Do not use ${this.name} in faulty condition`);
   }
 }
 
-class LargeMachinery extends ElectricalAppliances {
-  connect() {
-    console.log(`${this.name} works from the socket.`);
+class Room extends ElectricalAppliances {
+  constructor(technicArr) {
+    super(name);
+
+    this.technicArr = technicArr;
+  }
+  powerConsumption() {
+    let consumption = 0;
+    for (let i = 0; i < this.technicArr.length; i++) {
+      if (this.technicArr[i].connect === true) {
+        consumption += this.technicArr[i].watt;
+      }
+    }
+    console.log(consumption);
+  }
+  foundName(whatName) {
+    this.whatName = whatName;
+
+    console.log(
+      this.technicArr.find(function (element) {
+        if (element.name === this.whatName);
+        return element.name;
+      })
+    );
   }
 }
 
-class SmallTechnique extends ElectricalAppliances {
-  battery() {
-    console.log(`${this.name} has a battery.`);
-  }
-}
+let washer = new ElectricalAppliances("washer", 200, true);
+let electricStove = new ElectricalAppliances("electric stove", 150, true);
+let vacuumCleaner = new ElectricalAppliances("vacuum cleaner", 100, true);
+let laptop = new ElectricalAppliances("laptop", 80, false);
+let telephone = new ElectricalAppliances("telephone", 50, false);
 
-let washer = new LargeMachinery("washer");
-let electricStove = new LargeMachinery("electric stove");
-let vacuumCleaner = new LargeMachinery("vacuum cleaner");
-let laptop = new SmallTechnique("laptop");
-let telephone = new SmallTechnique("telephone");
-
-let socket = [];
-socket.push(washer);
-socket.push(electricStove);
-socket.push(vacuumCleaner);
-console.log(socket);
-
-function powerConsumption() {
-  let consumption =
-    washer.power(200) + electricStove.power(150) + vacuumCleaner.power(100);
-  console.log(`Power consumption of connected devices = ${consumption} watt.`);
-}
-powerConsumption();
-
-let room = [];
-room.push(washer, electricStove, vacuumCleaner, laptop, telephone);
-console.log(room);
-
-function foundName(name) {
-  this.name = name;
-  console.log(room.find((x) => x.name === this.name));
-}
+let myRoom = new Room([
+  washer,
+  electricStove,
+  vacuumCleaner,
+  laptop,
+  telephone,
+]);
