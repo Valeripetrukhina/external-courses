@@ -8,11 +8,8 @@ class ElectricalAppliances {
     console.log(`Do not use ${this.name} in faulty condition`);
   }
 }
-
-class Room extends ElectricalAppliances {
+class Room {
   constructor(technicArr) {
-    super(name);
-
     this.technicArr = technicArr;
   }
   powerConsumption() {
@@ -49,3 +46,4 @@ let myRoom = new Room([
   laptop,
   telephone,
 ]);
+console.log(myRoom.powerConsumption());

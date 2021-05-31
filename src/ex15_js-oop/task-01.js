@@ -31,9 +31,7 @@ function ChildGift(giftArr) {
   this.sortGift = function () {
     var sortGift = this.gift;
     sortGift.sort(function (a, b) {
-      if (a.weight > b.weight) return 1;
-      if (a.weight < b.weight) return -1;
-      return 0;
+      return a.weight > b.weight ? 1 : -1;;
     });
     sortGift.forEach(function (sortGift) {
       console.log(sortGift);
@@ -51,3 +49,6 @@ function ChildGift(giftArr) {
 }
 
 var myGift = new ChildGift([milka, alpenGold, chocBitter, chocBar, wafer]);
+console.log(myGift.foundName("Milka"));
+console.log(myGift.sortGift());
+console.log(myGift.giftWeight());
